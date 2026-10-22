@@ -1,0 +1,6 @@
+@echo off
+cd /d "%~dp0"
+echo Installing required libraries (first run may take 2-3 minutes)...
+python -m pip install -r requirements.txt
+echo Starting ElectroCatalyst AI (real app)...
+python -m streamlit run electrocatalyst_real_app.py
